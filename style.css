@@ -1,0 +1,59 @@
+body { font-family: 'Inter'; margin:0; background:#f4f6f9; }
+
+.center {
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  height:100vh;
+}
+
+nav {
+  display:flex; justify-content:space-between;
+  padding:15px; background:white;
+}
+
+button {
+  padding:8px 12px; margin:5px;
+  background:#2563eb; color:white;
+  border:none; border-radius:6px;
+  cursor:pointer;
+}
+
+.container { padding:20px; }
+
+.section { display:none; }
+.section.active { display:block; }
+
+.cards { display:flex; gap:20px; }
+.card {
+  background:white; padding:20px;
+  border-radius:10px; flex:1;
+  text-align:center;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.vehicle {
+  background:white; padding:15px;
+  border-radius:10px;
+}
+
+table {
+  width:100%; margin-top:20px;
+  border-collapse:collapse;
+}
+th,td { border:1px solid #ddd; padding:10px; }
+
+.modal {
+  display:none; position:fixed;
+  inset:0; background:rgba(0,0,0,0.5);
+}
+.modal.show { display:block; }
+
+.box {
+  background:white; padding:20px;
+  margin:100px auto; width:300px;
+}
